@@ -1,0 +1,63 @@
+.pageWrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 25px;
+} 
+
+h1 {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.articleCard {
+    border: 3px solid black;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding: 25px;
+}
+
+.articleCard--image {
+    background-color: gray;
+    flex-basis: 30%;
+    min-height: 250px;
+}
+
+.articleCard--image img {
+    height: auto;
+    width: 100%;
+}
+
+.articleCard--text {
+    flex-basis: 70%;
+    flex-direction: column;
+}
+
+.title {
+    line-height: 0.5;
+}
+
+.date {
+    line-height: 1.0;
+}
+
+.article--content {
+    margin: 0 auto;
+}
+
+.article--header {
+    background-size: cover;
+}
+
+.article-header-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.bodySection {
+    padding-left: 25%;
+    padding-right: 25%;
+}
