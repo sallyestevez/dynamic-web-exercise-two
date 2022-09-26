@@ -19,7 +19,12 @@ function Article(){
             </header>
             <section>
                 <div className="bodySection">
-                    <p class="articleBody">Article Body</p>
+                    <p class="articleBody">Article Body Paragraph 1</p>
+                    <h2>Header Two Inserted</h2>
+                    <p>Paragraph 2</p>
+                    <h3>Header Three Inserted</h3>
+                    <p>Paragraph 3</p>
+                    <p>Paragraph 4</p>
                 </div>
             </section>
         </main>

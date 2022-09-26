@@ -12,8 +12,20 @@ function List() {
                 imageSrc="hi again" 
                 title="Article Title"
             />
-            <ArticleCard />
-            <ArticleCard />
+            <ArticleCard 
+                blurb="Blurb" 
+                date="Date" 
+                imageAlt="hi" 
+                imageSrc="hi again" 
+                title="Article Title"
+            />
+            <ArticleCard 
+                blurb="Blurb" 
+                date="Date" 
+                imageAlt="hi" 
+                imageSrc="hi again" 
+                title="Article Title"
+            />
         </main>
     )
 }
