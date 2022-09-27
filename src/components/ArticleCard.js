@@ -20,7 +20,7 @@ function ArticleCard( {
                 <p className="date">{date}</p>
                 <p className="blurb">{blurb}</p>
                 <p className="link">
-                    <a href="">Link</a>
+                    <a href={`/article/${id}`}>Read More</a>
                 </p>
             </div>
         </div>

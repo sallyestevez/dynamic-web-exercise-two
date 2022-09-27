@@ -14,7 +14,7 @@ const router = createBrowserRouter([ /* function takes in one argument - array c
     element: <List />,
   },
   {
-    path: "/article",
+    path: "/article/:id",
     element: <Article />,
   },
 ]);
