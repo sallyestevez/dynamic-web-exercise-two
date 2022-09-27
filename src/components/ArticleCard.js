@@ -3,9 +3,10 @@ import react from "react";
 function ArticleCard( {
     blurb, 
     date, 
+    id,
     imageAlt, 
     imageSrc, 
-    title
+    title,
 } ) {
     // props is always an object 
     // that comes from the parent
