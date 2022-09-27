@@ -1,31 +1,26 @@
 import React from "react";
 import ArticleCard from '../components/ArticleCard'
+import data from "../components/data"
+
+console.log(data)
 
 function List() {
     return (
         <main className="pageWrapper">
             <h1>Articles</h1>
-            <ArticleCard 
-                blurb="Blurb" 
-                date="Date" 
-                imageAlt="hi" 
-                imageSrc="hi again" 
-                title="Article Title"
-            />
-            <ArticleCard 
-                blurb="Blurb" 
-                date="Date" 
-                imageAlt="hi" 
-                imageSrc="hi again" 
-                title="Article Title"
-            />
-            <ArticleCard 
-                blurb="Blurb" 
-                date="Date" 
-                imageAlt="hi" 
-                imageSrc="hi again" 
-                title="Article Title"
-            />
+            {data.map((article, i) => (
+                <ArticleCard 
+                    // react requires a key identifying value for anything you map over
+                    key={i}
+                    blurb={article.blurb} 
+                    date={article.publishedDate} 
+                    imageAlt={article.image.alt} 
+                    imageSrc={article.image.url} 
+                    title={article.title}
+                />
+            ))}
+
+            
         </main>
     )
 }

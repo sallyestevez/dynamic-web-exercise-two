@@ -1,6 +1,12 @@
 import react from "react";
 
-function ArticleCard( {blurb, date, imageAlt, imageSrc, title} ) {
+function ArticleCard( {
+    blurb, 
+    date, 
+    imageAlt, 
+    imageSrc, 
+    title
+} ) {
     // props is always an object 
     // that comes from the parent
     // TODO: make sure to go over link
