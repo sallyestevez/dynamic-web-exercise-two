@@ -1,13 +1,13 @@
-import react from "react";
+import react, { useMemo } from "react";
 
-function ArticleCard( {
-    blurb, 
-    date, 
-    id,
-    imageAlt, 
-    imageSrc, 
-    title,
+function ArticleCard( { blurb, date, id, imageAlt, imageSrc, title,
 } ) {
+    const articleDate = useMemo(() => {
+        if(!date) return '';
+        const parsedDate = new Date(date);
+        return parsedDate.toDateString();
+    }, [date]);
+
     // props is always an object 
     // that comes from the parent
     // TODO: make sure to go over link
@@ -18,7 +18,7 @@ function ArticleCard( {
             </div>
             <div className="articleCard--text">
                 <h2 className="title">{title}</h2>
-                <p className="date">{date}</p>
+                <p className="date">{articleDate}</p>
                 <p className="blurb">{blurb}</p>
                 <p className="link">
                     <a href={`/article/${id}`}>Read More</a>
